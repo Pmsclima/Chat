@@ -43,7 +43,8 @@ public class ClientChat {
           messageOut = bufferedReader.readLine();
           dataOutputStream.writeUTF(messageOut);
           messageIn =  dataInputStream.readUTF();
-          System.out.println(messageIn); // Print server message
+          // Print server message
+          System.out.println(messageIn);
 
          }
 

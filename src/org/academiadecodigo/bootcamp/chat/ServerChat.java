@@ -38,6 +38,7 @@ public class ServerChat {
 
         /**
          * BufferedReader - read text from a character-input stream
+         * InputStreamReader is a bridge from byte streams to character streams
          */
 
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
@@ -45,11 +46,10 @@ public class ServerChat {
         while (!messageIn.equalsIgnoreCase("Bye")){
 
             messageIn = dataInputStream.readUTF();
-            System.out.println(messageIn); // Print client message
+            // Print client message
+            System.out.println(messageIn); 
             messageOut = bufferedReader.readLine();
             dataOutputStream.writeUTF(messageOut);
-
-
         }
 
         /**
