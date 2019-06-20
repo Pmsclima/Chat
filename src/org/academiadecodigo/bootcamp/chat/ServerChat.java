@@ -49,6 +49,7 @@ public class ServerChat {
             messageOut = bufferedReader.readLine();
             dataOutputStream.writeUTF(messageOut);
 
+
         }
 
         /**
@@ -56,7 +57,6 @@ public class ServerChat {
          */
 
         clientSocket.close();
-
     }
 
 }

@@ -44,7 +44,8 @@ public class ClientChat {
           dataOutputStream.writeUTF(messageOut);
           messageIn =  dataInputStream.readUTF();
           System.out.println(messageIn); // Print server message
-        }
+
+         }
 
         /**
          * Close() - Terminate a communications between 2 machines
