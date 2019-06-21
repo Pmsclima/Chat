@@ -53,6 +53,9 @@ public class ClientChat {
          */
 
         clientSocket.close();
+        dataInputStream.close();
+        dataOutputStream.close();
+        bufferedReader.close();
 
     }
 }
